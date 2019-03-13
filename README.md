@@ -15,7 +15,7 @@ A cookiecutter template for creating reusable Django REST Framework packages wit
 
 ## Requirements
 
-This repo uses the [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) templating project. You will need to install Cookiecutter. The easiset method is by a pip install:
+This repo uses the [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) templating project. You will need to install Cookiecutter. The recommended method is by a pip install:
 
 ```bash
 $ pip install cookiecutter
@@ -43,9 +43,10 @@ You will be asked the following information when creating a project:
   "pypi_project_name": "djangorestframework-package",
   "repo_name": "django-rest-framework-package",
   "app_name": "rest_framework_package",
-  "project_short_description": "Your project description goes here",
+  "project_short_description": "Your project description goes in here",
   "year": "2015",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "open_source_license": ["MIT", "BSD", "ISCL", "Apache Software License 2.0", "Not open source"]
 }
 ```
 
@@ -60,5 +61,6 @@ You will be asked the following information when creating a project:
 - project_short_description: A brief description of the project
 - year: current year project is created
 - version: initial version of the app, should be 0.1.0 if new project
+- open_source_license: Type of License to apply
 
 ### Example
