@@ -14,7 +14,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/{{ hackoregon }}/{{ cookiecutter.repo_name }}/issues.
+Report bugs at https://github.com/hackoregon/{{ cookiecutter.repo_name }}/issues.
 
 If you are reporting a bug, please include:
 
