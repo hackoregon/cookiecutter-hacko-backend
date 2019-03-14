@@ -16,5 +16,5 @@ A clear and concise description of what you want to happen.
 **Describe alternatives you've considered**
 A clear and concise description of any alternative solutions or features you've considered.
 
-*Explain how this feature relates to your Hack Oregon project scope.**
+**Explain how this feature relates to your Hack Oregon project scope.**
 Add any other context or screenshots about the feature request here.
