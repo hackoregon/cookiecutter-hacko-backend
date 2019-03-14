@@ -26,8 +26,10 @@ $ pip install cookiecutter
 To generate a new repo:
 
 ```
-$ cookiecutter gh:hackoregon/cookiecutter-hacko-backend
+$ cookiecutter gh:hackoregon/cookiecutter-hacko-backend --checkout BRANCH
 ```
+
+You can leave out the `--checkout BRANCH` if checking out from MASTER.
 
 You'll be prompted for some questions, answer them, then it will create a cookiecutter-hacko-backend with your new package.
 

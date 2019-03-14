@@ -13,7 +13,7 @@ Releases will be tagged and development will take place on the `develop` branch,
 - Initial Commit
 - Basic README, cookiecutter.json, license, other docs added
 - Repo Template folder, App template folder
-- Contributions guidline
+- Contributions guideline
 - Requirements folder
 
 ### Changed
