@@ -52,7 +52,7 @@ For Hack Oregon Team Members
 
 If you are proposing a feature:
 
-* Open a new github issue for an Enhancement Request.
+* Open a new github issue for a Feature Request.
 * Explain in detail how it would work.
 * Explain how this feature relates to your project scope. Including links to any related cards.
 * Keep the scope as narrow as possible, to make it easier to implement.
