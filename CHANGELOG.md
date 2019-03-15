@@ -6,7 +6,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 Releases will be tagged and development will take place on the `develop` branch, merges back to master will be tagged and annotated here.
 
 ## [2019-03-12]
-#### Tag: 0.0.1
+#### Tag: 0.2.0
+
+### Changed
+
+
+## [2019-03-12]
+#### Tag: 0.1.0
 
 ### Added
 
