@@ -15,5 +15,6 @@ Releases will be tagged and development will take place on the `develop` branch,
 - Repo Template folder, App template folder
 - Contributions guideline
 - Requirements folder
+- Tox based testing
 
 ### Changed

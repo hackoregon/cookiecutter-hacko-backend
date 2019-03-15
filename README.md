@@ -1,5 +1,7 @@
 # cookiecutter-hacko-backend
 
+[![Build Status](https://travis-ci.org/hackoregon/cookiecutter-hacko-backend.svg?branch=master)](https://travis-ci.org/hackoregon/cookiecutter-hacko-backend)
+
 A cookiecutter template for creating reusable Django REST Framework packages with the best practices quickly. This template is customized to provide structure for quickstarting a Hack Oregon civic data project.
 
 ## What is Hack Oregon?
@@ -52,7 +54,7 @@ You will be asked the following information when creating a project:
 }
 ```
 
-#### Explanation
+### Explanation
 
 - full_name: Your name as project originator (for credit in documentation)
 - email: Your email address
@@ -66,3 +68,50 @@ You will be asked the following information when creating a project:
 - open_source_license: Type of License to apply
 
 ### Example
+
+## Tests
+
+To run tests on the Cookiecutter generation, please install TOX, which is a generic virtualenv management and test command line tool.
+
+TOX is avaiable to install from PyPI via pip:
+
+```
+$ pip install tox
+```
+
+It will automatically create a fresh virtual environment and install our test dependencies,
+such as `pytest-cookies` and `flake8`.
+
+## Run the Tests
+
+Tox uses py.test under the hood, hence it supports the same syntax for selecting tests.
+
+For further information please consult the `pytest usage docs`.
+
+To run all tests using various versions of python in `virtualenvs` defined in `tox.ini`, just run tox:
+
+```
+    $ tox
+```
+
+It is possible to test with a specific version of python. To do this, the command
+is:
+
+```
+    $ tox -e py36
+```
+
+This will run py.test with the python3.6 interpreter, for example.
+
+To run a particular test with tox for against your current Python version:
+
+```
+    $ tox -e py -- -k test_default_configuration
+```
+
+* [pytest usage docs](https://pytest.org/latest/usage.html#specifying-tests-selecting-tests)
+* [tox](https://tox.readthedocs.io/en/latest/)
+* [pip](https://pypi.python.org/pypi/pip/)
+* [pytest-cookies](https://pypi.python.org/pypi/pytest-cookies/)
+* [flake8](https://pypi.python.org/pypi/flake8/)
+* [PyPI](https://pypi.python.org/pypi)
