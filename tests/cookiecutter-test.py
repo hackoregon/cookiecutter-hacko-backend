@@ -59,6 +59,19 @@ def test_default_configuration(cookies, context):
     assert paths
     check_paths(paths)
 
+def test_readme(cookies):
+    result = cookies.bake()
+
+    readme_file = result.project.join('README.rst')
+    readme_lines =[]
+    with open(readme_file) as f:
+        readme_lines.extend(f.readline() for x in range(2))
+
+    assert readme_lines == [
+        '=============================\n',
+        'djangorestframework-package\n'
+    ]
+
 def test_flake8_compliance(cookies):
     """generated project should pass flake8"""
     result = cookies.bake()

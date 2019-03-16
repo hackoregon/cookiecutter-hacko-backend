@@ -1,7 +1,18 @@
+# project setup
+
+djangorestframework>=3.7.7
+
+# Code quality
+# ------------------------------------------------------------------------------
+flake8==3.7.6
+
 # Testing
-coverage==4.4.2
-#django-nose==1.4.5
-# tblib required for viewing tracebacks from the unit test runner
-tblib==1.3.2
+# ------------------------------------------------------------------------------
+tox==3.6.1
+pytest==4.3.1
 pytest-django
 pytest-xdist
+coverage==4.4.2
+
+# tblib required for viewing tracebacks from the unit test runner
+tblib==1.3.2
