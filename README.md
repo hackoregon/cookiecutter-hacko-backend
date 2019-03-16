@@ -13,7 +13,7 @@ A cookiecutter template for creating reusable Django REST Framework packages wit
 - Tox configuration
 - Sane setup.py for easy PyPI registration/distribution
 - Choice of Open Source License options
-- Standard templates for README, issues, Contribution guidelines
+- Standard templates for README, issues and pull requests, Contribution guidelines
 
 ## Requirements
 
@@ -34,6 +34,8 @@ $ cookiecutter gh:hackoregon/cookiecutter-hacko-backend --checkout BRANCH
 You can leave out the `--checkout BRANCH` if checking out from MASTER.
 
 You'll be prompted for some questions, answer them, then it will create a cookiecutter-hacko-backend with your new package.
+
+At this point, you are ready to connect with an external git.
 
 ### Cookiecutter values
 

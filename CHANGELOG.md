@@ -6,10 +6,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 Releases will be tagged and development will take place on the `develop` branch, merges back to master will be tagged and annotated here.
 
 ## [2019-03-12]
-#### Tag: 0.2.0
+#### Tag: 0.1.0
+
+### Added
+
+- Added a Pull Request template
 
 ### Changed
 
+- n/a
 
 ## [2019-03-12]
 #### Tag: 0.1.0
@@ -24,3 +29,5 @@ Releases will be tagged and development will take place on the `develop` branch,
 - Tox based testing
 
 ### Changed
+
+- n/a
