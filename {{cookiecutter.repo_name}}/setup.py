@@ -63,16 +63,14 @@ setup(
         '{{ cookiecutter.app_name }}',
     ],
     include_package_data=True,
-
 {%- if cookiecutter.open_source_license in license_classifiers %}
     license="{{ cookiecutter.open_source_license }}",
 {%- endif %}
     zip_safe=False,
     keywords='{{ cookiecutter.repo_name }}',
     classifiers=[
-        'Development Status :: 3 - Alpha',{% if '1.11' in cookiecutter.django_versions %}
-        'Framework :: Django :: 1.11',{% endif %}{% if '2.0' in cookiecutter.django_versions %}
-        'Framework :: Django :: 2.0',{% endif %}
+        'Development Status :: 3 - Alpha',
+        'Framework :: Django :: 2.0',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Natural Language :: English',
