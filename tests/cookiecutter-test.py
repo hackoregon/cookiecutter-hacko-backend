@@ -15,9 +15,9 @@ def context():
       "full_name": "Your full name here",
       "email": "you@example.com",
       "github_username": "yourname",
-      "pypi_project_name": "djangorestframework-package",
-      "repo_name": "django-rest-framework-package",
-      "app_name": "rest_framework_package",
+      "project_name": "djangorestframework-package",
+      "project_slug": "django-rest-framework-package",
+      "project_slug": "rest_framework_package",
       "project_short_description": "Your project description goes in here",
       "year": "2015",
       "version": "0.1.0",
@@ -52,7 +52,7 @@ def test_default_configuration(cookies, context):
     result = cookies.bake(extra_context=context)
     assert result.exit_code == 0
     assert result.exception is None
-    assert result.project.basename == context["repo_name"]
+    assert result.project.basename == context["project_slug"]
     assert result.project.isdir()
 
     paths = build_files_list(str(result.project))

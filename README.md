@@ -46,9 +46,9 @@ You will be asked the following information when creating a project:
   "full_name": "Your full name here",
   "email": "you@example.com",
   "github_username": "yourname",
-  "pypi_project_name": "djangorestframework-package",
-  "repo_name": "django-rest-framework-package",
-  "app_name": "rest_framework_package",
+  "project_name": "djangorestframework-package",
+  "project_slug": "django-rest-framework-package",
+  "project_slug": "rest_framework_package",
   "project_short_description": "Your project description goes in here",
   "year": "2015",
   "version": "0.1.0",
@@ -61,9 +61,9 @@ You will be asked the following information when creating a project:
 - full_name: Your name as project originator (for credit in documentation)
 - email: Your email address
 - github_username: Your github username
-- pypi_project_name: Cannonical name which will be used within package registry
-- repo_name: Master project repository name on github
-- app_name: Name of the Django Rest Framework package (what will be imported to project)
+- project_name: Cannonical name which will be used within package registry
+- project_slug: Master project repository name on github
+- project_slug: Name of the Django Rest Framework package (what will be imported to project)
 - project_short_description: A brief description of the project
 - year: current year project is created
 - version: initial version of the app, should be 0.1.0 if new project

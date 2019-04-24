@@ -18,7 +18,7 @@ except ImportError:
 
 
 def get_version(*file_paths):
-    """Retrieves the version from {{ cookiecutter.app_name }}/__init__.py"""
+    """Retrieves the version from {{ cookiecutter.project_slug }}/__init__.py"""
     filename = os.path.join(os.path.dirname(__file__), *file_paths)
     version_file = open(filename).read()
     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
@@ -28,7 +28,7 @@ def get_version(*file_paths):
     raise RuntimeError('Unable to find version string.')
 
 
-version = get_version("{{ cookiecutter.app_name }}", "__init__.py")
+version = get_version("{{ cookiecutter.project_slug }}", "__init__.py")
 
 
 if sys.argv[-1] == 'publish':
@@ -52,22 +52,22 @@ readme = open('README.rst').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
-    name='{{ cookiecutter.repo_name }}',
+    name='{{ cookiecutter.project_slug }}',
     version=version,
     description="""{{ cookiecutter.project_short_description }}""",
     long_description=readme + '\n\n' + history,
     author='{{ cookiecutter.full_name }}',
     author_email='{{ cookiecutter.email }}',
-    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}',
+    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
     packages=[
-        '{{ cookiecutter.app_name }}',
+        '{{ cookiecutter.project_slug }}',
     ],
     include_package_data=True,
 {%- if cookiecutter.open_source_license in license_classifiers %}
     license="{{ cookiecutter.open_source_license }}",
 {%- endif %}
     zip_safe=False,
-    keywords='{{ cookiecutter.repo_name }}',
+    keywords='{{ cookiecutter.project_slug }}',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Framework :: Django :: 2.0',

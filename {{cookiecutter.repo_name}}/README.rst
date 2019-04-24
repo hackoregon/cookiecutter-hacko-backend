@@ -1,26 +1,26 @@
 =============================
-{{ cookiecutter.pypi_project_name }}
+{{ cookiecutter.project_name }}
 =============================
 
-.. image:: https://badge.fury.io/py/{{ cookiecutter.repo_name }}.svg
-    :target: https://badge.fury.io/py/{{ cookiecutter.repo_name }}
+.. image:: https://badge.fury.io/py/{{ cookiecutter.project_slug }}.svg
+    :target: https://badge.fury.io/py/{{ cookiecutter.project_slug }}
 
-.. image:: https://travis-ci.org/hackoregon/{{ cookiecutter.repo_name }}.svg?branch=master
-    :target: https://travis-ci.org/hackoregon/{{ cookiecutter.repo_name }}
+.. image:: https://travis-ci.org/hackoregon/{{ cookiecutter.project_slug }}.svg?branch=master
+    :target: https://travis-ci.org/hackoregon/{{ cookiecutter.project_slug }}
 
 {{ cookiecutter.project_short_description}}
 
 Documentation
 -------------
 
-The full documentation is at http://hackoregon.github.io/{{ cookiecutter.repo_name }}
+The full documentation is at http://hackoregon.github.io/{{ cookiecutter.project_slug }}
 
 Quickstart
 ----------
 
-Install {{ cookiecutter.pypi_project_name }}::
+Install {{ cookiecutter.project_name }}::
 
-    pip install {{ cookiecutter.repo_name }}
+    pip install {{ cookiecutter.project_slug }}
 
 Add it to your `INSTALLED_APPS`:
 
@@ -28,20 +28,20 @@ Add it to your `INSTALLED_APPS`:
 
     INSTALLED_APPS = (
         ...
-        '{{ cookiecutter.app_name }}.apps',
+        '{{ cookiecutter.project_slug }}.apps',
         ...
     )
 
-Add {{ cookiecutter.pypi_project_name }}'s URL patterns:
+Add {{ cookiecutter.project_name }}'s URL patterns:
 
 .. code-block:: python
 
-    from {{ cookiecutter.app_name }} import urls as {{ cookiecutter.app_name }}_urls
+    from {{ cookiecutter.project_slug }} import urls as {{ cookiecutter.project_slug }}_urls
 
 
     urlpatterns = [
         ...
-        url(r'^', include({{ cookiecutter.app_name }}_urls)),
+        url(r'^', include({{ cookiecutter.project_slug }}_urls)),
         ...
     ]
 

@@ -3,6 +3,6 @@ include ./docs/contributing.rst
 include ./docs/history.rst
 include LICENSE
 include README.rst
-recursive-include {{cookiecutter.app_name}} *.html *.png *.gif *js *.css *jpg *jpeg *svg *py
+recursive-include {{cookiecutter.project_slug}} *.html *.png *.gif *js *.css *jpg *jpeg *svg *py
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
